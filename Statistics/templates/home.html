@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Home - Statistics App{% endblock %}
+
+{% block content %}
+<main class="container">
+    <h1>Enter Numbers</h1>
+
+    {% if error %}
+        <div class="error-message">{{ error }}</div>
+    {% endif %}
+
+    <form method="post" enctype="multipart/form-data" action="{% url 'results' %}">
+        {% csrf_token %}
+        <label for="number-input">Enter comma-separated numbers:</label><br>
+        <input type="text" name="numbers" id="number-input" placeholder="e.g., 1,2,3,4" required><br><br>
+
+        <label for="file-upload">Or upload a file:</label><br>
+        <input type="file" name="file" id="file-upload"><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</main>
+{% endblock %}

@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #2d2d2d;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f0e6d2;
+    letter-spacing: 1px;
+}
+
+.cart-button {
+    color: #f0e6d2;
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.cart-button:hover {
+    transform: scale(1.1);
+    color: #ffe7c2;
+}
+.cart-count {
+    background-color: #658e2d;
+    color: white;
+    font-weight: 500;
+    font-size: 0.80rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 50%;
+    position: relative;
+    top: -10px;
+    left: 4px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 4rem auto;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #3c2f23;
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    color: #3e2d1c;
+}
+
+
+input[type="text"],
+input[type="file"] {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fffbf7;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="file"]:focus {
+    border-color: #a87b4a;
+    box-shadow: 0 0 0 3px rgba(168, 123, 74, 0.2);
+    outline: none;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #7c4f2b;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #5a3f2a;
+    transform: translateY(-2px);
+}
+
+.error-message {
+    color: #b00020;
+    background-color: #ffe5e5;
+    padding: 1rem;
+    border: 1px solid #b00020;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}

@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Statistics App{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-brand">StatisticsApp</div>
+        <div class="cart">
+            <a href="#" class="cart-button">
+                <i class="fas fa-shopping-cart"></i>
+                <sup id="cart-count" class="cart-count">{{ unique_count|default:0 }}</sup>
+            </a>
+        </div>
+    </nav>
+    {% block content %}{% endblock %}
+    <script src="{% static 'script/home.js' %}"></script>
+</body>
+</html>

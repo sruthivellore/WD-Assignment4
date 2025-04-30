@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Results - Statistics App{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/result.css' %}">
+
+<div class="results-container">
+    <h1 class="results-heading">Statistics Results</h1>
+
+    <div class="results-card results-numbers">
+        <h2>Valid Numbers Entered:</h2>
+        <p class="results-list">{{ numbers|join:", " }}</p>
+    </div>
+
+    <div class="results-grid">
+        <div class="results-card"><h3>Sum</h3><p>{{ sum }}</p></div>
+        <div class="results-card"><h3>Mean</h3><p>{{ mean }}</p></div>
+        <div class="results-card"><h3>Median</h3><p>{{ median }}</p></div>
+        <div class="results-card"><h3>Mode</h3><p>{{ mode|join:", " }}</p></div>
+        <div class="results-card"><h3>Range</h3><p>{{ range }}</p></div>
+    </div>
+
+    <div class="results-card results-primes">
+        <h3>Prime Numbers</h3>
+        <p>{{ primes|join:", " }}</p>
+    </div>
+
+    <div class="results-card results-armstrong">
+        <h3>Armstrong Numbers</h3>
+        <p>{{ armstrongs|join:", " }}</p>
+    </div>
+    <br><br>
+    <button class="results-back-button" onclick="window.location.href='{% url 'home' %}'">
+        ← Go Back
+    </button>
+    
+</div>
+{% endblock %}
