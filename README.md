@@ -21,6 +21,10 @@ It allows users to enter or upload a list of numbers and get detailed statistica
 - Displays results in styled, responsive cards
 - Highlights invalid inputs with clear messages
 
+![image](https://github.com/user-attachments/assets/b8b62be2-3397-4382-af91-d8cef2d10127)
+
+![image](https://github.com/user-attachments/assets/99b7fd89-604a-42f6-81ee-4b70c77c944d)
+
 ---
 
 ## 🛠 Tech Stack
