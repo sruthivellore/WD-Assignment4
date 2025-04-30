@@ -39,8 +39,8 @@ Here’s a step-by-step guide to running the project on your local machine:
 1. Clone the repository
 
     ```bash
-    git clone https://github.com/your-username/statistics-app.git
-    cd statistics-app
+    git clone https://github.com/sruthivellore/WD-Assignment4.git
+    cd WD-Assignment4
     ```
 
 2. Set up a virtual environment
@@ -51,10 +51,9 @@ Here’s a step-by-step guide to running the project on your local machine:
 
 3. Activate the virtual environment
 
-    - On Windows:
-      ```bash
-      venv\Scripts\activate
-      ```
+    ```bash
+    venv\Scripts\activate
+    ```
 
 4. Install dependencies
 
