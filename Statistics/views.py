@@ -57,7 +57,7 @@ def results(request):
             'range': num_range,
             'primes': primes,
             'armstrongs': armstrongs,
-            'unique_count': len(numbers)
+            'unique_count': len(set(numbers)),
         }
 
         return render(request, 'result.html', context)
